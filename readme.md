@@ -73,18 +73,20 @@ git clone https://github.com/tharvesh2026/internalCalculator
 cd internalCalculator
 ```
 
-### 3. Build the project
+### 3. compile the project
 
 ```bash
-mvn clean package
+javac -cp "lib/*" intern.project.App
 ```
-
-### 4. Run the application
-
+you should run it like this:
 ```bash
-java -cp target\simpleapp-1.0-SNAPSHOT.jar intern.project.App
+java -cp ".:lib/*" intern.project.App
 ```
-
+If you're on Windows
+Use ; instead of ::
+```bash
+java -cp ".;lib/*" intern.project.App
+```
 ---
 
 ## Example Usage
